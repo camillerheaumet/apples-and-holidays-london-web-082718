@@ -39,7 +39,7 @@ def all_supplies_in_holidays(holiday_hash)
       if holidays.include?("_")
         holidays.split("_").capitalize!
       else
-        holidays.capitalize
+        holiday.capitalize
       end
       
       puts "#{season.to_s.capitalize}:"
