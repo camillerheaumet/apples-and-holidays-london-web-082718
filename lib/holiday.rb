@@ -36,7 +36,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holidays|
     holidays.each do |holiday, supply|
       
-      if holiday.include?("_")
+      if holiday.include? "_"
         holiday.to_s.split("_").capitalize!
         h = holyday.join(" ")
       else
