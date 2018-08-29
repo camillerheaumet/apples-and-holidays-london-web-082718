@@ -38,10 +38,12 @@ def all_supplies_in_holidays(holiday_hash)
       
       if holidays.include?("_")
         holidays.split("_").capitalize!
+      else
+        holidays.capitalize
       end
       
       puts "#{season.to_s.capitalize}:"
-      puts "  #{holiday.to_s.join(" ")}: #{supply.join(", ")}"
+      puts "  #{holiday.to_s}: #{supply.join(", ")}"
      
       #holiday_hash = season.to_s, holiday.to_s.capitalize!, [supply.to_s]
     #   binding.pry
