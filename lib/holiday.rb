@@ -44,7 +44,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
       
       puts "#{season.to_s.capitalize}:"
-      puts "  #{holiday.to_s.capitalize}: #{supply.join(", ")}"
+      puts "  #{h}: #{supply.join(", ")}"
      
       #holiday_hash = season.to_s, holiday.to_s.capitalize!, [supply.to_s]
     #   binding.pry
