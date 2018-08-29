@@ -40,6 +40,7 @@ def all_supplies_in_holidays(holiday_hash)
         h = holiday.to_s.split("_")
         h.each do |mot|
           mot.capitalize
+        end
         h = h.join(" ")
       else
         h = holiday.to_s.capitalize
