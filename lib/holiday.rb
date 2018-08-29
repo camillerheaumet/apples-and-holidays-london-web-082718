@@ -39,7 +39,7 @@ def all_supplies_in_holidays(holiday_hash)
       if holiday.to_s.include? "_"
         h = holiday.to_s.split("_")
         h.each do |mot|
-          mot.capitalize
+          mot = mot.capitalize
         end
         h = h.join(" ")
       else
